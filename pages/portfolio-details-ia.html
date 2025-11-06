@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Detalle del invento – IA Generativa</title>
+  <meta name="description" content="Modelos capaces de generar texto, imágenes, audio y código. Usos, ventajas, riesgos e impacto social.">
+  <link href="../assets/img/favicon.png" rel="icon"><link href="../assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="https://fonts.googleapis.com" rel="preconnect"><link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&family=Ubuntu:wght@300;400;500;700&family=Nunito:wght@300;400;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="../assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="../assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="../assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="../assets/css/main.css" rel="stylesheet">
+</head>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  // Init AOS (opcional)
+  if (window.AOS) AOS.init({ once: true, duration: 700 });
+
+  // Init Glightbox (opcional)
+  if (window.GLightbox) GLightbox({ selector: '.glightbox' });
+
+  // Init Swiper leyendo la config JSON
+  document.querySelectorAll('.init-swiper').forEach(function (el) {
+    try {
+      const cfgEl = el.querySelector('.swiper-config');
+      const cfg = cfgEl ? JSON.parse(cfgEl.textContent.trim()) : {};
+      new Swiper(el, cfg);
+    } catch (e) { console.error('Swiper config error', e); }
+  });
+});
+</script>
+
+<body class="portfolio-details-page">
+  <main class="main">
+    <div class="page-title dark-background">
+      <div class="container d-lg-flex justify-content-between align-items-center">
+        <h1 class="mb-2 mb-lg-0">IA Generativa</h1>
+        <nav class="breadcrumbs"><ol><li><a href="../index.html">Inicio</a></li><li class="current">Detalle del invento</li></ol></nav>
+      </div>
+    </div>
+    <section id="portfolio-details" class="portfolio-details section">
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row gy-4">
+          <div class="col-lg-8">
+            <div class="portfolio-details-slider swiper init-swiper">
+              <script type="application/json" class="swiper-config">
+                { "loop": true, "speed": 600, "autoplay": {"delay": 5000},
+                  "slidesPerView": "auto",
+                  "pagination": {"el": ".swiper-pagination","type":"bullets","clickable": true} }
+              </script>
+              <div class="swiper-wrapper align-items-center">
+                <div class="swiper-slide"><img src="../assets/img/inventos/ia-generativa-2.jpg" class="img-fluid" alt="Interfaz de IA generando texto" loading="lazy"></div>
+                <div class="swiper-slide"><img src="../assets/img/inventos/ia-generativa.jpg" class="img-fluid" alt="IA creando imagen a partir de texto" loading="lazy"></div>
+                <div class="swiper-slide"><img src="../assets/img/inventos/ia-generativa-3.jpg" class="img-fluid" alt="Representación de redes neuronales profundas" loading="lazy"></div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <div class="portfolio-info" data-aos="fade-left" data-aos-delay="200">
+              <h3>Ficha del invento</h3>
+              <ul>
+                <li><strong>Categoría</strong>: Inteligencia Artificial</li>
+                <li><strong>Impulso</strong>: 2023–presente</li>
+                <li><strong>Actores</strong>: Comunidades de investigación y empresas tecnológicas</li>
+                <li><strong>Aplicaciones</strong>: Texto, imágenes, audio, código</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-12">
+            <div class="portfolio-description" data-aos="fade-up" data-aos-delay="300">
+              <h2>Descripción</h2>
+              <p>La IA generativa crea contenido nuevo a partir de instrucciones. Aprende de grandes conjuntos de datos para producir textos coherentes, imágenes realistas, audio y hasta código, acelerando tareas creativas y de productividad.</p>
+
+              <div class="features mt-4">
+                <h3>Usos destacados</h3>
+                <div class="row gy-3">
+                  <div class="col-md-6"><div class="feature-item"><i class="bi bi-mortarboard"></i><h4>Educación</h4><p>Tutorías, resúmenes y ejercicios personalizados.</p></div></div>
+                  <div class="col-md-6"><div class="feature-item"><i class="bi bi-brush"></i><h4>Creatividad</h4><p>Bocetos, guiones, piezas gráficas y prototipos.</p></div></div>
+                  <div class="col-md-6"><div class="feature-item"><i class="bi bi-code-slash"></i><h4>Desarrollo</h4><p>Asistencia para generar código, pruebas y documentación.</p></div></div>
+                  <div class="col-md-6"><div class="feature-item"><i class="bi bi-shield-check"></i><h4>Gobernanza</h4><p>Buenas prácticas: privacidad, sesgos, verificación humana.</p></div></div>
+                </div>
+              </div>
+
+              <div class="features mt-4">
+                <h3>Impacto</h3>
+                <div class="row gy-3">
+                  <div class="col-md-4"><div class="feature-item"><i class="bi bi-people"></i><h4>Social</h4><p>Acceso a asistentes y aprendizaje personalizado.</p></div></div>
+                  <div class="col-md-4"><div class="feature-item"><i class="bi bi-cash-stack"></i><h4>Económico</h4><p>Productividad, nuevos empleos y servicios digitales.</p></div></div>
+                  <div class="col-md-4"><div class="feature-item"><i class="bi bi-globe2"></i><h4>Ambiental</h4><p>Optimización de procesos; considerar huella energética.</p></div></div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div></div>
+    </section>
+  </main>
+
+  <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/vendor/aos/aos.js"></script>
+  <script src="../assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>
