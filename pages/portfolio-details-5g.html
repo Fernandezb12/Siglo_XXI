@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Detalle del invento – Redes 5G</title>
+  <meta name="description" content="Conectividad de alta velocidad y baja latencia para IoT, industria y ciudades inteligentes.">
+  <link href="../assets/img/favicon.png" rel="icon"><link href="../assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet"><link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="../assets/vendor/aos/aos.css" rel="stylesheet"><link href="../assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="../assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet"><link href="../assets/css/main.css" rel="stylesheet">
+</head>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  // Init AOS (opcional)
+  if (window.AOS) AOS.init({ once: true, duration: 700 });
+
+  // Init Glightbox (opcional)
+  if (window.GLightbox) GLightbox({ selector: '.glightbox' });
+
+  // Init Swiper leyendo la config JSON
+  document.querySelectorAll('.init-swiper').forEach(function (el) {
+    try {
+      const cfgEl = el.querySelector('.swiper-config');
+      const cfg = cfgEl ? JSON.parse(cfgEl.textContent.trim()) : {};
+      new Swiper(el, cfg);
+    } catch (e) { console.error('Swiper config error', e); }
+  });
+});
+</script>
+
+<body class="portfolio-details-page">
+  <main class="main">
+    <div class="page-title dark-background">
+      <div class="container d-lg-flex justify-content-between align-items-center">
+        <h1 class="mb-2 mb-lg-0">Redes 5G</h1>
+        <nav class="breadcrumbs"><ol><li><a href="../index.html">Inicio</a></li><li class="current">Detalle del invento</li></ol></nav>
+      </div>
+    </div>
+
+    <section id="portfolio-details" class="portfolio-details section">
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row gy-4">
+          <div class="col-lg-8">
+            <div class="portfolio-details-slider swiper init-swiper">
+              <script type="application/json" class="swiper-config">
+                { "loop": true, "speed": 600, "autoplay": {"delay": 5000},
+                  "slidesPerView": "auto","pagination":{"el":".swiper-pagination","type":"bullets","clickable":true} }
+              </script>
+              <div class="swiper-wrapper align-items-center">
+                <div class="swiper-slide"><img src="../assets/img/inventos/ciudad-conectada.jpg" class="img-fluid" alt="Antenas 5G en ciudad" loading="lazy"></div>
+                <div class="swiper-slide"><img src="../assets/img/inventos/redes-5g.jpg" class="img-fluid" alt="Ciudad inteligente conectada" loading="lazy"></div>
+              </div><div class="swiper-pagination"></div>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <div class="portfolio-info">
+              <h3>Ficha del invento</h3>
+              <ul>
+                <li><strong>Categoría</strong>: Redes / IoT</li>
+                <li><strong>Despliegue</strong>: 2019–presente</li>
+                <li><strong>Ventajas</strong>: Baja latencia, más dispositivos y mayor velocidad</li>
+                <li><strong>Usos</strong>: Industria 4.0, streaming, vehículos conectados</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-12">
+            <div class="portfolio-description">
+              <h2>Descripción</h2>
+              <p>El 5G es la nueva generación de redes móviles. Permite velocidades muy altas y tiempos de respuesta mínimos, fundamentales para comunicaciones críticas y miles de dispositivos conectados por kilómetro.</p>
+
+              <div class="features mt-4">
+                <h3>Usos destacados</h3>
+                <div class="row gy-3">
+                  <div class="col-md-6"><div class="feature-item"><i class="bi bi-hdd-network"></i><h4>IoT masivo</h4><p>Ciudades y hogares inteligentes con sensores conectados.</p></div></div>
+                  <div class="col-md-6"><div class="feature-item"><i class="bi bi-gear-wide-connected"></i><h4>Industria 4.0</h4><p>Robots, monitoreo y mantenimiento predictivo.</p></div></div>
+                  <div class="col-md-6"><div class="feature-item"><i class="bi bi-camera-video"></i><h4>Experiencias inmersivas</h4><p>AR/VR y streaming en alta calidad.</p></div></div>
+                  <div class="col-md-6"><div class="feature-item"><i class="bi bi-shield-lock"></i><h4>Reto</h4><p>Seguridad y cobertura: despliegues graduales, normas y ciberseguridad.</p></div></div>
+                </div>
+              </div>
+
+              <div class="features mt-4">
+                <h3>Impacto</h3>
+                <div class="row gy-3">
+                  <div class="col-md-4"><div class="feature-item"><i class="bi bi-people"></i><h4>Social</h4><p>Servicios públicos más eficientes y conectividad.</p></div></div>
+                  <div class="col-md-4"><div class="feature-item"><i class="bi bi-cash-stack"></i><h4>Económico</h4><p>Nuevos modelos de negocio digitales y productividad.</p></div></div>
+                  <div class="col-md-4"><div class="feature-item"><i class="bi bi-globe2"></i><h4>Ambiental</h4><p>Optimización energética; planificar infraestructura responsable.</p></div></div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div></div>
+    </section>
+  </main>
+  <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/vendor/aos/aos.js"></script>
+  <script src="../assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>
