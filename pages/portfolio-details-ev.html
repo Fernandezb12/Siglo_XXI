@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Detalle del invento – Vehículos Eléctricos</title>
+  <meta name="description" content="Movilidad eléctrica: eficiencia energética y reducción de emisiones.">
+  <link href="../img/favicon.png" rel="icon"><link href="../assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet"><link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="../assets/vendor/aos/aos.css" rel="stylesheet"><link href="../assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="../assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet"><link href="../assets/css/main.css" rel="stylesheet">
+</head>
+<body class="portfolio-details-page">
+  <main class="main">
+    <div class="page-title dark-background">
+      <div class="container d-lg-flex justify-content-between align-items-center">
+        <h1 class="mb-2 mb-lg-0">Vehículos Eléctricos</h1>
+        <nav class="breadcrumbs"><ol><li><a href="../index.html">Inicio</a></li><li class="current">Detalle del invento</li></ol></nav>
+      </div>
+    </div>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  // Init AOS (opcional)
+  if (window.AOS) AOS.init({ once: true, duration: 700 });
+
+  // Init Glightbox (opcional)
+  if (window.GLightbox) GLightbox({ selector: '.glightbox' });
+
+  // Init Swiper leyendo la config JSON
+  document.querySelectorAll('.init-swiper').forEach(function (el) {
+    try {
+      const cfgEl = el.querySelector('.swiper-config');
+      const cfg = cfgEl ? JSON.parse(cfgEl.textContent.trim()) : {};
+      new Swiper(el, cfg);
+    } catch (e) { console.error('Swiper config error', e); }
+  });
+});
+</script>
+
+    <section id="portfolio-details" class="portfolio-details section">
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row gy-4">
+          <div class="col-lg-8">
+            <div class="portfolio-details-slider swiper init-swiper">
+              <script type="application/json" class="swiper-config">
+                { "loop": true, "speed": 600, "autoplay": {"delay": 5000},
+                  "slidesPerView": "auto","pagination":{"el":".swiper-pagination","type":"bullets","clickable":true} }
+              </script>
+              <div class="swiper-wrapper align-items-center">
+                <div class="swiper-slide"><img src="../assets/img/inventos/electric.jpg" class="img-fluid" alt="Auto eléctrico cargando" loading="lazy"></div>
+                <div class="swiper-slide"><img src="../assets/img/inventos/vehiculo-electrico.jpg" class="img-fluid" alt="Estación de carga para vehículos eléctricos" loading="lazy"></div>
+              </div><div class="swiper-pagination"></div>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <div class="portfolio-info">
+              <h3>Ficha del invento</h3>
+              <ul>
+                <li><strong>Categoría</strong>: Movilidad / Energía</li>
+                <li><strong>Despegue</strong>: 2012–presente</li>
+                <li><strong>Tecnologías</strong>: Baterías de iones de litio, motores eléctricos, regeneración</li>
+                <li><strong>Infraestructura</strong>: Redes de carga AC/DC</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-12">
+            <div class="portfolio-description">
+              <h2>Descripción</h2>
+              <p>Los vehículos eléctricos reemplazan el motor de combustión por uno eléctrico alimentado por baterías recargables. Ofrecen alta eficiencia, menor mantenimiento y cero emisiones locales.</p>
+
+              <div class="features mt-4">
+                <h3>Usos/ventajas</h3>
+                <div class="row gy-3">
+                  <div class="col-md-6"><div class="feature-item"><i class="bi bi-lightning-charge"></i><h4>Eficiencia</h4><p>Menor consumo por kilómetro y regeneración de energía.</p></div></div>
+                  <div class="col-md-6"><div class="feature-item"><i class="bi bi-gear"></i><h4>Mantenimiento</h4><p>Menos piezas móviles y costos operativos.</p></div></div>
+                  <div class="col-md-6"><div class="feature-item"><i class="bi bi-ev-front"></i><h4>Movilidad urbana</h4><p>Reducción de ruido y contaminación local.</p></div></div>
+                  <div class="col-md-6"><div class="feature-item"><i class="bi bi-plug"></i><h4>Reto</h4><p>Autonomía, tiempos de carga y reciclaje de baterías.</p></div></div>
+                </div>
+              </div>
+
+              <div class="features mt-4">
+                <h3>Impacto</h3>
+                <div class="row gy-3">
+                  <div class="col-md-4"><div class="feature-item"><i class="bi bi-people"></i><h4>Social</h4><p>Mejor calidad del aire en ciudades.</p></div></div>
+                  <div class="col-md-4"><div class="feature-item"><i class="bi bi-cash-stack"></i><h4>Económico</h4><p>Nuevas industrias y empleos en movilidad eléctrica.</p></div></div>
+                  <div class="col-md-4"><div class="feature-item"><i class="bi bi-globe2"></i><h4>Ambiental</h4><p>Menores emisiones; transición a energías renovables.</p></div></div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div></div>
+    </section>
+  </main>
+  <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/vendor/aos/aos.js"></script>
+  <script src="../assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>
